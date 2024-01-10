@@ -1,0 +1,41 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+  public static void main (String[]args)
+  {
+    SimpleCollection j = new SimpleCollection ("characters");
+      System.out.println ("Longest: " + j.longest ());
+
+      j.add ("magneto");
+      j.add ("mystique");
+      j.add ("phoenix");
+
+      System.out.println ("Longest: " + j.longest ());
+  }
+
+
+
+}
+
+	/*The exercise template comes with the class SimpleCollection that's familiar from previous exercises. 
+	   Implement the method public String longest() for the class, which returns the longest string of the collection. 
+	   If the collection is empty, the method should return a null reference.
+
+	   SimpleCollection j = new SimpleCollection("characters");
+	   System.out.println("Longest: " + j.longest());
+
+	   j.add("magneto");
+	   j.add("mystique");
+	   j.add("phoenix");
+
+	   System.out.println("Longest: " + j.longest());
+	   Sample output
+	   Longest: null
+	   Longest: mystique */

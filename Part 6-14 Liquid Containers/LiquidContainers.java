@@ -25,8 +25,11 @@ public class LiquidContainers {
                     case "add":
                         if (firstContainer + amount <= 100 && amount >= 0) {
                             firstContainer += amount;
-                        } else {
+                        } else if(amount >=0) {
                             firstContainer = 100;
+                        }
+                        else{
+                            System.out.println("Whole numbers please!");
                         }
                         break;
                     case "move":

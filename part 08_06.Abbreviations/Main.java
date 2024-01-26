@@ -16,6 +16,8 @@ abbreviations.addAbbreviation("i.e.", "more precisely");
 
 String text = "e.g. i.e. etc. lol";
 
+//String[] parts = text.split(" ");
+//for (String part: parts) {
 for (String part: text.split(" ")) {
     if(abbreviations.hasAbbreviation(part)) {
         part = abbreviations.findExplanationFor(part);
